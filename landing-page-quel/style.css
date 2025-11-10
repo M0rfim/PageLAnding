@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background: #000000bb;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #b555fa;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    color: #F2C94C;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-nav {
+    background: #6A0DAD;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+/* HERO */
+.hero {
+    background: url("https://images.unsplash.com/photo-1598368195835-99a2dfb9c61c") center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.sobre-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-hero {
+    width: 450px;
+    border-radius: 12px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 32px;
+    transition: 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.15);
+}
+
+.btn {
+    background: #F2C94C;
+    color: #000;
+    padding: 14px 25px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: #1c1c1c;
+    border: 2px solid #6A0DAD;
+    padding: 30px;
+    width: 280px;
+    border-radius: 8px;
+}
+
+.plano.destaque {
+    border-color: #F2C94C;
+}
+
+/* DEPOIMENTOS */
+.depoimentos .img-depo {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* FORM */
+input,
+textarea {
+    padding: 12px;
+    border: 2px solid #6A0DAD;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+}
